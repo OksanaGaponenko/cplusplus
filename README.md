@@ -1,4 +1,5 @@
-Программирование на языке С плюс плюс
+program in C plus plus
+
 #include <iostream>
 using namespace std;
 void main()
@@ -12,3 +13,10 @@ void main()
 		cin >> array[i];
 	}
 	cout << "kratnoe 3 : " << endl;
+for (int i = 0; i < b; i++)
+	{
+		if (array[i] % 3 == 0)
+			cout << "array[" << i << "] = " << array[i] << endl;
+	}
+	system("pause");
+}
