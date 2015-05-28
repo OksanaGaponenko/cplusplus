@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	const int rows = 3;
+	const int columns = 4;
+	int array[rows][columns];
+
+	cout << "vvedite elementi massiva";
+
+	for (int i = 0; i < rows ; i++)
+	{
+		for (int j = 0; j < columns ; j++)
+			cin >> array[i][j];
+	}
+	int sum = 0;
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < columns; j++)
+		{
+			if (array[i][j] == 0)
+				sum++;
+		}
+	}
+	cout << "kolirestvo 0 elementov v massive = " << sum << endl;
+
+	system("pause");
+}
